@@ -5,7 +5,7 @@ conversations of a user and listens for realtime updates.
 
 ## How to use
 
-To make the component work correctly, you need to perform following
+To make the component work correctly, you need to perform the following
 steps.
 
 ### Add `ConversationRecyclerView` widget into your xml layout
@@ -23,12 +23,12 @@ language (DSL) suitable for configuring the component.
 
 **Optional properties**:
 - `imageLoader: ImageLoader` 
-  -   Defines a way how to upload picture's urls to `ImageView`s.
+  -   Defines how to upload a picture's urls to `ImageView`s.
 - `onItemClick: OnClickAction<ConversationItemView>`
-  -  Defines an action that is performed after a user clicks on a
+  -  Defines the action that is performed after a user clicks on a
      conversation.
 - `viewHolderProvider: ConversationViewHolderProvider` 
-  - Allows to add a custom implementations of `ViewHolders`.
+  - Allows the adding of a custom implementations of `ViewHolders`.
      
 ```kotlin
 conversationRecyclerView.init {
@@ -42,7 +42,7 @@ conversationRecyclerView.init {
 ### Get realtime updates
 `ConversationRecyclerView` **is not lifecycle-aware**. You must
 configure manually when to start/stop observing data by calling
-`onStart()` and `onStop()` functions. A recommended way is to start
+`onStart()` and `onStop()` functions. It is recommended to start
 listening in `onStart()` method and to stop listening in `onStop()`
 method of your activity/fragment.
 
